@@ -1,7 +1,8 @@
 import http from "http"
 
 const server = http.createServer((req, res) => {
-    return res.end("Minha primeira API!")
+    const {method} = req
+    return res.writeHead(404).end("Método: " + method)
 })
 
 server.listen(3333)
