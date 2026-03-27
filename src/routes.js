@@ -20,4 +20,5 @@ export const routes = [
             return res.end("Produto deletado!")
         }
     }
+    
 ]
